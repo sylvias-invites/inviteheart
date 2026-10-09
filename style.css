@@ -2,7 +2,7 @@
    1. ZÁKLADNÍ NASTAVENÍ A BAREVNOST
    ========================================== */
 :root {
-    --bg-color: #FBF9F3;
+    --bg-color: #fff3fc;
     --text-color: #4a4a4a;
     --accent-color: #000000;
     --font-heading: 'Great Vibes', cursive;
@@ -16,10 +16,7 @@
 }
 
 body {
-    background-image: url("background.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+     background-color: var(--bg-color);
     
     color: var(--text-color);
     font-family: var(--font-body);
