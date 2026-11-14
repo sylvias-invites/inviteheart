@@ -42,6 +42,27 @@
 
     <!-- 2. VNITŘNÍ STRÁNKA (DETAILNÍ INFORMACE) -->
     <div class="content-screen" id="content-screen">
+
+        <!-- Plovoucí tlačítko menu (hamburger) -->
+<div class="menu-toggle-btn" onclick="toggleMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
+
+<!-- Rozbalovací menu s odkazy -->
+<div class="side-menu" id="side-menu">
+    <button class="close-menu" onclick="toggleMenu()">&times;</button>
+    <h3>Navigace</h3>
+    <ul>
+        <li><a href="#countdown" onclick="toggleMenu()">Odpočet</a></li>
+        <li><a href="#program" onclick="toggleMenu()">Svatební program</a></li>
+        <li><a href="#doprava" onclick="toggleMenu()">Doprava</a></li>
+        <li><a href="#dresscode" onclick="toggleMenu()">Dresscode</a></li>
+        <li><a href="#dary" onclick="toggleMenu()">Svatební dary</a></li>
+        <li><a href="#rsvp" onclick="toggleMenu()">Potvrzení účasti (RSVP)</a></li>
+    </ul>
+</div>
         
         <!-- Hlavička s iniciály a datem -->
         <div class="header-initials">
