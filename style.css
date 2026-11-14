@@ -159,20 +159,6 @@ body {
     opacity: 1;
 }
 
-/* Hlavička s iniciály */
-.header-initials {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 18px;
-    font-family: var(--font-heading);
-    font-size: 1.4rem;
-    color: var(--accent-color);
-    margin-top: -10px;
-    padding-bottom: 15px;
-    margin-bottom: 30px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-}
 
 .mini-heart {
     width: 38px;
@@ -449,25 +435,41 @@ body {
     }
 }
 
-
-/* Plovoucí tlačítko menu */
-.menu-toggle-btn {
+/* ==========================================
+   PEVNÁ HORNÍ LIŠTA (NAVBAR)
+   ========================================== */
+.top-header-bar {
     position: fixed;
-    top: 20px;
-    left: 20px;
-    width: 45px;
-    height: 45px;
-    background-color: #f7d6e0; /* Růžová barva ladící se stylem */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-color: rgba(255, 243, 252, 0.95);
+    backdrop-filter: blur(5px);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+}
+
+/* Tlačítko menu v liště */
+.menu-toggle-btn {
+    position: static; /* Zrušíme fixed, nyní je součástí lišty */
+    width: 40px;
+    height: 40px;
+    background-color: #f7d6e0;
     border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: 8px; /* Čtverec se zaoblenými rohy (pokud chcete ostrý, dejte 0) */
+    border-radius: 8px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 5px;
     cursor: pointer;
-    z-index: 1000;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
     transition: background-color 0.3s ease;
 }
 
@@ -477,11 +479,32 @@ body {
 
 .menu-toggle-btn span {
     display: block;
-    width: 22px;
+    width: 20px;
     height: 2px;
     background-color: #4a4a4a;
     border-radius: 2px;
 }
+
+/* Iniciály a datum uvnitř horní lišty */
+.header-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: var(--font-heading);
+    font-size: 1.25rem;
+    color: var(--accent-color);
+}
+
+.header-brand .mini-heart {
+    width: 24px;
+    height: auto;
+}
+
+/* Odsazení obsahu vnitřní stránky, aby ho lišta nepřekrývala */
+.content-screen {
+    padding-top: 70px !important;
+}
+
 
 /* Vysouvací panel menu */
 .side-menu {
