@@ -138,11 +138,6 @@ function revealEverything() {
     if (hasRevealed) return;
     hasRevealed = true;
 
-    const mainTitle = document.getElementById("main-title");
-    if (mainTitle) {
-        mainTitle.style.transition = "opacity 0.6s ease";
-        mainTitle.style.opacity = "0";
-    }
 
     if (typeof confetti === "function") {
         const diamond = confetti.shapeFromPath({
