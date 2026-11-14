@@ -8,11 +8,11 @@
     <meta property="og:title" content="Naše svatba">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=block" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css?v=1.13">
+    <link rel="stylesheet" href="style.css?v=1.14">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 </head>
     
@@ -27,8 +27,8 @@
             <div class="reveal-text">
                 <h2>Srdečně tě zveme na naši svatbu</h2>
                 <p>
-                        <span id="wedding-date" class="date">02. 07. 2027</span>
-                    </p>
+                    <span id="wedding-date" class="date">02. 07. 2027</span>
+                </p>
             </div>
             
             <!-- Stírací vrstva -->
@@ -42,30 +42,117 @@
 
     <!-- 2. VNITŘNÍ STRÁNKA (DETAILNÍ INFORMACE) -->
     <div class="content-screen" id="content-screen">
-        <h2 class="content-subtitle">Budeme se brát!</h2>
         
-        <p class="content-text">
-            Srdečně vás zveme, abyste s námi prožili náš svatební den plný lásky, radosti a dobrého jídla.
-        </p>
-
-        <div class="details-box">
-            <div class="details-item"><strong>Kdy:</strong> 7. června 2027 </div>
-            <div class="details-item"><strong>Kde:</strong> Zámek Teplice</div>
-            <div class="details-item"><strong>Dresscode:</strong> Letní elegantní</div>
+        <!-- Hlavička s iniciály a datem -->
+        <div class="header-initials">
+            <span>J &amp; T</span>
+            <img src="heart.png" alt="Srdce" class="mini-heart">
+            <span>2. 7. 2027</span>
         </div>
 
-        <p class="content-text" style="font-size: 0.9rem; font-style: italic;">
-            Prosíme o potvrzení účasti do 30. dubna.
-        </p>
+        <h2 class="content-subtitle">Pojďte oslavit náš den s námi!</h2>
+
+        <!-- Odpočet -->
+        <div class="countdown-section">
+            <h3 class="section-script-title">Užijte si s námi naši svatbu za:</h3>
+            <div class="countdown-timer" id="countdown">
+                <div class="time-box"><span id="days">0</span><small>dní</small></div>
+                <div class="time-box"><span id="hours">0</span><small>hodin</small></div>
+                <div class="time-box"><span id="minutes">0</span><small>minut</small></div>
+                <div class="time-box"><span id="seconds">0</span><small>sekund</small></div>
+            </div>
+        </div>
+
+        <!-- Svatební program -->
+        <div class="program-section">
+            <h3 class="section-serif-title">Svatební program</h3>
+            <div class="timeline">
+                <div class="timeline-item left">
+                    <span class="time">11:00</span>
+                    <p class="event">Svatební obřad</p>
+                </div>
+                <div class="timeline-item right">
+                    <span class="time">12:30</span>
+                    <p class="event">Slavnostní oběd</p>
+                </div>
+                <div class="timeline-item left">
+                    <span class="time">15:00</span>
+                    <p class="event">Krájení dortu a káva</p>
+                </div>
+                <div class="timeline-item right">
+                    <span class="time">18:00</span>
+                    <p class="event">Večeře a zábava</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Doprava -->
+        <div class="info-section">
+            <h3 class="section-script-title">Doprava</h3>
+            <p class="content-text">
+                Svatba se koná v resortu <strong>Samsara</strong>.<br>
+                Doprava na místo je individuální a na místě je možné parkovat na parkovišti přímo v areálu.
+            </p>
+        </div>
+
+        <!-- Dresscode -->
+        <div class="info-section">
+            <h3 class="section-script-title">Dresscode</h3>
+            <p class="content-text">
+                Naši svatbu ladíme do jemných pastelových barev.
+            </p>
+            <div class="color-palette">
+                <span class="color-dot" style="background-color: #f7d6e0;"></span>
+                <span class="color-dot" style="background-color: #e2d4f0;"></span>
+                <span class="color-dot" style="background-color: #cde4f7;"></span>
+                <span class="color-dot" style="background-color: #d1f5d3;"></span>
+                <span class="color-dot" style="background-color: #e5e5e5;"></span>
+            </div>
+        </div>
+
+        <!-- Svatební dary -->
+        <div class="info-section">
+            <h3 class="section-script-title">Svatební dary</h3>
+            <p class="content-text">
+                Největším darem pro nás bude vaše přítomnost.<br>
+                Pokud byste nás přesto chtěli obdarovat, budeme vděční za příspěvek na naši svatební cestu.
+            </p>
+        </div>
+
+        <!-- RSVP Formulář -->
+        <div class="info-section rsvp-section">
+            <h3 class="section-script-title">Potvrzení účasti</h3>
+            <p class="content-text" style="margin-bottom: 15px;">
+                Prosíme o vyplnění do 30. dubna 2027.
+            </p>
+            
+            <form id="rsvp-form" class="rsvp-form">
+                <input type="text" id="guest-name" name="name" placeholder="Vaše jméno a příjmení" required>
+                
+                <select id="attendance" name="attendance" required>
+                    <option value="" disabled selected>Dorazíte na svatbu?</option>
+                    <option value="ano">Ano, rád/a dorazím</option>
+                    <option value="ne">Bohužel se nemohu zúčastnit</option>
+                </select>
+
+                <input type="number" id="guest-count" name="guests" min="1" max="10" placeholder="Počet osob (včetně vás)">
+                
+                <textarea id="guest-note" name="note" rows="3" placeholder="Vzkaz pro novomanžele nebo dietní omezení (nepovinné)"></textarea>
+                
+                <button type="submit" class="submit-btn">Odeslat odpověď</button>
+            </form>
+            <p id="rsvp-message" class="rsvp-message"></p>
+        </div>
+
     </div>
 
     <!-- Propojení na externí JavaScript soubor -->
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
-    <script src="script.js?v=1.13"></script>
+    <script src="script.js?v=1.14"></script>
+    
     <!-- Animovaná pixelová kočička -->
-    <!-- img src="cat.png" class="pixel-cat" alt="Kočička"> -->
     <pixel-cat>
-    <img src="walking-cat.gif" alt="">
-</pixel-cat>
+        <img src="walking-cat.gif" alt="">
+    </pixel-cat>
 </body>
 </html>
