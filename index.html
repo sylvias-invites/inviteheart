@@ -43,6 +43,24 @@
     <!-- 2. VNITŘNÍ STRÁNKA (DETAILNÍ INFORMACE) -->
     <div class="content-screen" id="content-screen">
 
+        <!-- Pevná horní lišta (AppBar) -->
+<header class="top-header-bar">
+    <!-- Tlačítko menu vlevo -->
+    <div class="menu-toggle-btn" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    
+    <!-- Iniciály a datum v liště -->
+    <div class="header-brand">
+        <span>J &amp; T</span>
+        <img src="heart.png" alt="Srdce" class="mini-heart">
+        <span>2. 7. 2027</span>
+    </div>
+</header>
+
+
         <!-- Plovoucí tlačítko menu (hamburger) -->
 <div class="menu-toggle-btn" onclick="toggleMenu()">
     <span></span>
@@ -64,12 +82,6 @@
     </ul>
 </div>
         
-        <!-- Hlavička s iniciály a datem -->
-        <div class="header-initials">
-            <span>J &amp; T</span>
-            <img src="heart.png" alt="Srdce" class="mini-heart">
-            <span>2. 7. 2027</span>
-        </div>
 
         <!-- Odpočet -->
         <div class="countdown-section">
